@@ -2,7 +2,7 @@ package com.simpleapi.entry;
 
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
-public abstract class StreamEnv {
+public class StreamEnv {
     private StreamExecutionEnvironment env;
     public StreamEnv(){
         this.env = StreamExecutionEnvironment.getExecutionEnvironment();
