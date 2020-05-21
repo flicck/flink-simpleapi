@@ -4,8 +4,8 @@ import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 
 public abstract class StreamEnv {
     private StreamExecutionEnvironment env;
-    public StreamEnv(StreamExecutionEnvironment env){
-        this.env = env;
+    public StreamEnv(){
+        this.env = StreamExecutionEnvironment.getExecutionEnvironment();
     }
     public Source source(){
         return new Source(env);
