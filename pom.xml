@@ -35,6 +35,7 @@
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-runtime_2.11</artifactId>
             <version>1.6.2</version>
+            <scope>provided</scope>
 <!--            			<scope>test</scope>-->
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
