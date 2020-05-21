@@ -19,6 +19,9 @@ public class StreamEnv {
     public Config config(){
         return new Config(env);
     }
+    public ExConfig exConfig(){
+        return new ExConfig(env);
+    }
     public Register register(){
         return new Register(env);
     }
