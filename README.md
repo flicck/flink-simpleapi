@@ -11,5 +11,13 @@
 
 以下为api结构图  
 ![结构](https://github.com/flicck/flink-simpleapi/blob/master/src/main/resources/gather%E5%8C%85%E4%B8%8B.png)
-![结构](https://github.com/flicck/flink-simpleapi/blob/master/src/main/resources/StreamEnv%E5%85%A5%E5%8F%A3.png)
+上面这些的接口或类或方法，有些是需要new出来，有些是需要实现或继承，根据所处场景进行判断  
+如 `.window(Win.Sliding.eventTime(Time.seconds(2L), Time.seconds(2L)))`
+![结构](https://github.com/flicck/flink-simpleapi/blob/master/src/main/resources/StreamEnv%E5%85%A5%E5%8F%A3.png)  
 
+
+`final StreamEnv streamEnv = new StreamEnv();`  
+      `streamEnv.from.collection(xxxxx);`  
+      `streamEnv.checkPoint.enable(xxxx);`  
+        `streamEnv.config.setStreamTimeCharacteristic(xxxx);`  
+        `streamEnv.exConfig.setAutoWatermarkInterval(xxxx);` 等等
