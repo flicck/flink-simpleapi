@@ -10,5 +10,7 @@
 `</dependency>`  
 
 以下为api结构图  
+![结构](https://github.com/flicck/flink-simpleapi/blob/master/src/main/resources/gather%E5%8C%85%E4%B8%8B.png)
+
 
 
