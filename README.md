@@ -20,4 +20,6 @@
       `streamEnv.from.collection(xxxxx);`  
       `streamEnv.checkPoint.enable(xxxx);`  
         `streamEnv.config.setStreamTimeCharacteristic(xxxx);`  
-        `streamEnv.exConfig.setAutoWatermarkInterval(xxxx);` 等等
+        `streamEnv.exConfig.setAutoWatermarkInterval(xxxx);` 等等  
+        
+### 下一阶段 整合所有Connector到StreamEnv，提供统一的入口
