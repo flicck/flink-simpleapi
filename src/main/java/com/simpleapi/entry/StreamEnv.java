@@ -21,4 +21,6 @@ public class StreamEnv {
     public Register register = new Register(env);
 
     public CheckPoint checkPoint = new CheckPoint(env);
+
+    public Connectors connectors =new Connectors(env);
 }
